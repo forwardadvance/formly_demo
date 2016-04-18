@@ -1,0 +1,27 @@
+{
+  "name": "formly_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify src/app.js -o js/app.js -t [ babelify --presets [ es2015 ] ]",
+    "watch": "watchify src/app.js -o js/app.js --debug --verbose -t [ babelify --presets [ es2015 react ] ]",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forwardadvance/formly_demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/forwardadvance/formly_demo/issues"
+  },
+  "homepage": "https://github.com/forwardadvance/formly_demo#readme",
+  "devDependencies": {
+    "angular": "^1.5.5",
+    "angular-formly-templates-bootstrap": "^6.4.0",
+    "api-check": "^7.5.5",
+    "babelify": "^7.2.0"
+  }
+}
