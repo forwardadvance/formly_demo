@@ -15,3 +15,4 @@ Build the project with `npm run build`. This will run browserify and regenerate 
 ## Watching
 
 Watch for file changes with `npm run watch`. Saving a file will rebuild the project.
+    

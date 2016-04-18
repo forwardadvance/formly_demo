@@ -6,7 +6,7 @@
   "scripts": {
     "build": "browserify src/app.js -o js/app.js -t [ babelify --presets [ es2015 ] ]",
     "watch": "watchify src/app.js -o js/app.js --debug --verbose -t [ babelify --presets [ es2015 react ] ]",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha spec"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,9 @@
     "angular": "^1.5.5",
     "angular-formly-templates-bootstrap": "^6.4.0",
     "api-check": "^7.5.5",
-    "babelify": "^7.2.0"
+    "babelify": "^7.2.0",
+    "bootstrap": "^3.3.6",
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
   }
 }
